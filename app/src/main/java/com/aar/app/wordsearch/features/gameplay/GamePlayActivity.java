@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.aar.app.wordsearch.R;
-import com.aar.app.wordsearch.features.SoundPlayer;
+//import com.aar.app.wordsearch.features.SoundPlayer;
 import com.aar.app.wordsearch.features.ViewModelFactory;
 import com.aar.app.wordsearch.WordSearchApp;
 import com.aar.app.wordsearch.commons.DurationFormatter;
@@ -45,8 +45,8 @@ public class GamePlayActivity extends FullscreenActivity {
 
     private static final StreakLineMapper STREAK_LINE_MAPPER = new StreakLineMapper();
 
-    @Inject
-    SoundPlayer mSoundPlayer;
+//    @Inject
+//    SoundPlayer mSoundPlayer;
 
     @Inject ViewModelFactory mViewModelFactory;
     private GamePlayViewModel mViewModel;
@@ -170,12 +170,12 @@ public class GamePlayActivity extends FullscreenActivity {
                 anim.start();
             }
 
-            mSoundPlayer.play(SoundPlayer.Sound.Correct);
+//            mSoundPlayer.play(SoundPlayer.Sound.Correct);
         }
         else {
             mLetterBoard.popStreakLine();
 
-            mSoundPlayer.play(SoundPlayer.Sound.Wrong);
+//            mSoundPlayer.play(SoundPlayer.Sound.Wrong);
         }
     }
 

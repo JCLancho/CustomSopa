@@ -9,10 +9,10 @@ import com.aar.app.wordsearch.features.ViewModelFactory;
 import com.aar.app.wordsearch.data.GameDataSource;
 import com.aar.app.wordsearch.data.GameThemeRepository;
 import com.aar.app.wordsearch.data.WordDataSource;
-import com.aar.app.wordsearch.features.gamehistory.GameHistoryViewModel;
+//import com.aar.app.wordsearch.features.gamehistory.GameHistoryViewModel;
 import com.aar.app.wordsearch.features.gameover.GameOverViewModel;
 import com.aar.app.wordsearch.features.gameplay.GamePlayViewModel;
-import com.aar.app.wordsearch.features.mainmenu.MainMenuViewModel;
+//import com.aar.app.wordsearch.features.mainmenu.MainMenuViewModel;
 
 import javax.inject.Singleton;
 
@@ -50,9 +50,9 @@ public class AppModule {
                                              WordDataSource wordDataSource) {
         return new ViewModelFactory(
                 new GameOverViewModel(gameDataSource),
-                new GamePlayViewModel(gameDataSource, wordDataSource),
-                new MainMenuViewModel(new GameThemeRepository()),
-                new GameHistoryViewModel(gameDataSource)
+                new GamePlayViewModel(gameDataSource, wordDataSource)
+//                new MainMenuViewModel(new GameThemeRepository()),
+//                new GameHistoryViewModel(gameDataSource)
         );
     }
 }

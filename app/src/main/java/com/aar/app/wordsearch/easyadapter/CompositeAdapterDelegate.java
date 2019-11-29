@@ -58,13 +58,13 @@ public class CompositeAdapterDelegate extends AdapterDelegate<CompositeData, Com
         MultiTypeAdapter adapter;
         public ViewHolder(View itemView) {
             super(itemView);
-            recyclerView = itemView.findViewById(R.id.recycler_view);
-            if (recyclerView == null) {
-                throw new RuntimeException("CompositeAdapterDelegate::ViewHolder: " +
-                        "Make sure item layout resource has the RecyclerView with id: recycler_view");
-            }
+//            recyclerView = itemView.findViewById(R.id.recycler_view);
+//            if (recyclerView == null) {
+//                throw new RuntimeException("CompositeAdapterDelegate::ViewHolder: " +
+//                        "Make sure item layout resource has the RecyclerView with id: recycler_view");
+//            }
             adapter = new MultiTypeAdapter();
-            recyclerView.setAdapter(adapter);
+//            recyclerView.setAdapter(adapter);
 
             Log.d("RVIN", "new adapter");
         }
